@@ -30,6 +30,13 @@ def calculateur_chat():
         else:
             be = poids*70
 
+        races = {
+            "Sphinx": 1.1,
+            "Autres": 1,
+        }
+        ponde_race = races[race]
+        be = be*ponde_race
+
         entries['label_be'].config(text=f"BE: {be:.2f} Kcal")
 
         besoin_proteines = int(6*poids)
@@ -47,7 +54,7 @@ def calculateur_chat():
     # Fenêtre principale
     root = tk.Tk()
     root.title("Calculateur Nutritionnel")
-    root.geometry(f'665x400+1600+300')
+    root.geometry(f'510x400+800+300')
 
     # Créer les frames et récupérer les widgets
     entries = {}

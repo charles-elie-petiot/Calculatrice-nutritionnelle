@@ -1,0 +1,5 @@
+copier de wsl vers windows.
+
+Dans powershell ADMINISTRATOR:
+
+pyinstaller --onefile --noconsole --add-data "frames;frames" --add-data "chat.py;." --add-data "chien.py;." main.py

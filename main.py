@@ -17,7 +17,7 @@ def main():
 
     accueil = tk.Tk()
     accueil.title("Calculateur nutritionnel")
-    accueil.geometry(f'200x150+1600+300')
+    accueil.geometry(f'200x150+800+300')
 
 
     chien = tk.Button(accueil, text="Chien", command=ouvrir_chien)

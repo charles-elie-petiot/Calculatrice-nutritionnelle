@@ -66,7 +66,7 @@ def calculateur_chien():
     # Fenêtre principale
     root = tk.Tk()
     root.title("Calculateur Nutritionnel")
-    root.geometry(f'665x400+1600+300')
+    root.geometry(f'510x400+800+300')
 
     # Créer les frames et récupérer les widgets
     entries = {}
